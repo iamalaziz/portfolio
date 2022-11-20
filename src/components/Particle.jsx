@@ -2,7 +2,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 // moving particles
-/* 
+
 const moving_particles = {
   particles: {
     bounce: {
@@ -365,7 +365,7 @@ const moving_particles = {
   smooth: true,
   zLayers: 100,
 };
-*/
+
 
 const stable_particles = {
   particles: {

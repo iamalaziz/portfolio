@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 900;
+  z-index: 11;
   width: 100%;
   height: 100vh;
   backdrop-filter: blur(2px);
@@ -38,9 +38,6 @@
       li {
         list-style-type: none;
         cursor: pointer;
-        &:hover a {
-          color: $green;
-        }
         span {
           color: $green;
         }
