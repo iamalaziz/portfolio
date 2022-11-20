@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 import About from "./About";
 import SideLinks from "./SideLinks";
+import Github from "./Github";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <SideLinks />
       <About />
+      <Github />
     </div>
   );
 };

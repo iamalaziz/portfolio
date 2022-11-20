@@ -3,7 +3,7 @@ import AboutSectionPhoto from "../assets/about-img.jpg";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <h1>
         <span>01. </span>About Me
       </h1>

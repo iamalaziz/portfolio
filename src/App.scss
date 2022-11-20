@@ -291,6 +291,9 @@
       }
     }
     @media screen and (max-width: 450px) {
+      & {
+        margin-bottom: 50px;;
+      }
       .wrapper {
         &:before {
           display: none;
@@ -303,4 +306,41 @@
     }
   }
 }
+@media screen and (max-width: 450px) {
+  .about {
+    margin-bottom: 50px;;
+  }
+}
 
+/* GITHUB */
+
+.git {
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    span {
+      color: $green;
+      font-family: Mono;
+      font-size: clamp(20px, 2vw, 30px);
+      margin-right: 15px;
+    }
+    h1 {
+      font-family: CalibreSB;
+      font-size: clamp(20px, 3vw, 32px);
+      color: $lightest-slate;
+    }
+    .line {
+      margin-left: 20px;
+      width: 60%;
+      height: 1px;
+      background-color: $light-slate;
+    }
+    @media screen and (max-width: 700px) {
+      .line {
+        display: none;
+      }
+    }
+  }
+  
+}

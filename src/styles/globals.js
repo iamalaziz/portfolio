@@ -6,6 +6,10 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+  }
   body {
     font-family: Mono;
     width: 100%;

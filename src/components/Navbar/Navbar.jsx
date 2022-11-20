@@ -18,9 +18,9 @@ const Navbar = ({ navbar, setNavbar }) => {
         <div className="nav">
           <ul>
             <li>
-              <Link to="/htmk">
+              <a href="#about">
                 <span>01.</span> About
-              </Link>
+              </a>
             </li>
             <li>
               <Link to="#">
