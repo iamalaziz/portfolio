@@ -1,7 +1,8 @@
 import React from "react";
 import "../App.scss";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineFacebook } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
+import {FaTelegramPlane} from 'react-icons/fa';
 
 const socialLinks = [
   {
@@ -10,22 +11,22 @@ const socialLinks = [
   },
   {
     icon: <AiOutlineInstagram />,
-    link: "http://github.com/iamalaziz",
+    link: "http://instagram.com/iamalaziz",
   },
   {
-    icon: <AiOutlineInstagram />,
-    link: "http://github.com/iamalaziz",
+    icon: <AiOutlineLinkedin />,
+    link: "http://linkedin.com/in/iamalaziz",
   },
   {
-    icon: <AiOutlineInstagram />,
-    link: "http://github.com/iamalaziz",
+    icon: <AiOutlineFacebook />,
+    link: "http://facebook.com/mashrabovabdulaziz",
   },
   {
-    icon: <AiOutlineInstagram />,
-    link: "http://github.com/iamalaziz",
+    icon: <FaTelegramPlane />,
+    link: "http://t.me/iamalaziz",
   },
 ];
-const SocialLinks = () => {
+const SideLinks = () => {
   return (
     <>
       <ul className="social">
@@ -48,4 +49,4 @@ const SocialLinks = () => {
   );
 };
 
-export default SocialLinks;
+export default SideLinks;
