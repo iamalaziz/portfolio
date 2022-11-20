@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -10,11 +9,11 @@ const Hero = () => {
       <p className="summary">
         I am a Front-End Developer specializing in building amazing web
         applications. Currently, I'm focused on MERN stack to build full
-        websites. I am a Front-End Developer specializing in building amazing
-        web applications. Currently, I'm focused on MERN stack to build full
         websites.
       </p>
-      <Link to="http://github.com/iamalaziz">Learn More!</Link>
+      <button>
+        <a href="http://github.com/iamalaziz">Learn More!</a>
+      </button>
     </section>
   );
 };

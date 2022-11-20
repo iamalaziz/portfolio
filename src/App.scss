@@ -43,13 +43,16 @@ h1 {
   height: 100%;
   z-index: -9;
 }
-/* Hero Section */
+
+/* HERO SECTION */
+
 .hero {
-  width: 90%;
+  width: 80%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   p:first-child {
     margin: 0 0 30px 4px;
     color: $green;
@@ -69,20 +72,34 @@ h1 {
     font-size: 1rem;
   }
   h1 {
-    font-size: 60px;
+    font-size: clamp(40px, 8vw, 80px);
     color: $slate;
     font-family: CalibreSB;
-  &:nth-child(2){
-    color: #fff;
+    &:nth-child(2){
+      color: $lightest_slate;
+    }
   }
-  
+  button {
+    background: none;
+    border: none;
+    text-align: center;
+    margin-top: 50px;
+    a {
+      color: $green;
+      padding: 1.25rem 1.75rem;
+      border: 1px solid $green;
+      letter-spacing: 2px;
+      &:hover {
+        background-color: $green_tint;
+      }
+    }
   }
 }
 /* Social Links */
 .social {
   position: absolute;
   bottom: 0;
-  left: 20px;
+  left: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -101,8 +118,10 @@ h1 {
     a {
       padding: 10px;
       transition: .3s all ease;
+      color: $slate;
       &:hover svg,
       &:focus svg{
+        color: $green;
         transform: translateY(-3px);
       }
       svg {
@@ -116,7 +135,7 @@ h1 {
 .email {
   position: absolute;
   bottom: 0;
-  right: 20px;
+  right: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,6 +160,7 @@ h1 {
     &:hover,
     &:focus {
       transform: translateY(-3px);
+      color: $green;
     }
   }
 }
