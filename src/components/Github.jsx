@@ -12,7 +12,9 @@ const Github = () => {
         <h1>Github Contributions</h1>
         <div className="line"></div>
       </div>
-      <GitHubCalendar username="iamalaziz" />
+      <div className="table">
+        <GitHubCalendar username="iamalaziz"/>
+      </div>
     </section>
   );
 };

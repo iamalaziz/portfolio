@@ -3,34 +3,46 @@ import pdf from "../../assets/resume.pdf";
 // import "./_MobileStyle.scss";
 import { IoCloseSharp } from "react-icons/io5";
 
+const navLinks = [
+  {
+    link: "#about",
+    name: "About",
+    num: "01",
+  },
+  {
+    link: "#experience",
+    name: "Experience",
+    num: "02",
+  },
+  {
+    link: "#projects",
+    name: "Projects",
+    num: "03",
+  },
+  {
+    link: "#contact",
+    name: "Contact",
+    num: "04",
+  },
+];
+
 const MobileMenu = ({ navbar, setNavbar }) => {
   return (
     <div className="mobile-navbar" onClick={() => setNavbar(false)}>
       <div className="nav" onClick={(e) => e.stopPropagation()}>
         <button className="closeBtn" onClick={() => setNavbar(false)}>
-          <IoCloseSharp className="close"/>
+          <IoCloseSharp className="close" />
         </button>
         <ul>
-          <li>
-            <a>
-              <span>01.</span> About
-            </a>
-          </li>
-          <li>
-            <a>
-              <span>02.</span> Experience
-            </a>
-          </li>
-          <li>
-            <a>
-              <span>03.</span> Projects
-            </a>
-          </li>
-          <li>
-            <a>
-              <span>04.</span> Contact
-            </a>
-          </li>
+          {navLinks.map(({ link, name, num }) => {
+            return (
+              <li key={num}>
+                <a href={link} onClick={() => setNavbar(false)}>
+                  <span>{num}.</span> {name}
+                </a>
+              </li>
+            );
+          })}
         </ul>
         <button className="resume-btn">
           <a href={pdf} target="_blank" rel="noopener noreferrer">
