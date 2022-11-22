@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     scroll-behavior: smooth;
-    scroll-padding: 150px;
+
   }
   body {
     font-family: Mono;
@@ -42,6 +42,28 @@ const GlobalStyles = createGlobalStyle`
     }
     @media screen and (max-width: 450px) {
       margin: 0 15px;
+    }
+  }
+
+  .section-title {
+    font-family: CalibreSB;
+    font-size: clamp(26px, 5vw, 32px);
+    color: #C9D6F7;
+    margin-bottom: 40px;
+    position: relative;
+    span {
+      color: #64ffda;
+      font-family: Mono;
+      font-size: clamp(16px, 3vw, 20px);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      margin-left: 20px;
+      width: 60%;
+      height: 1px;
+      background-color: #a8b2d1;
     }
   }
 `;

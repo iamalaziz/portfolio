@@ -34,9 +34,9 @@ const MobileMenu = ({ navbar, setNavbar }) => {
           <IoCloseSharp className="close" />
         </button>
         <ul>
-          {navLinks.map(({ link, name, num }) => {
+          {navLinks.map(({ link, name, num }, i) => {
             return (
-              <li key={num}>
+              <li key={num} data-aos="fade-left" data-aos-delay={(i+1)*100}>
                 <a href={link} onClick={() => setNavbar(false)}>
                   <span>{num}.</span> {name}
                 </a>

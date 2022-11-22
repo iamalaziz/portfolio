@@ -1,5 +1,6 @@
 @import "./styles/custom.scss";
 @import "./styles/variables.scss";
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .App {
@@ -27,7 +28,6 @@
 /* HERO SECTION */
 
 .hero {
-
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -167,37 +167,16 @@
 }
 
 /* ABOUT */
-
+// there is smth to delete
 .about {
-  margin-top: 100px;
   margin-bottom: 100px;
-  h1 {
-    font-family: CalibreSB;
-    font-size: clamp(26px, 5vw, 32px);
-    color: $lightest-slate;
-    margin-bottom: 40px;
-    position: relative;
-    span {
-      color: $green;
-      font-family: Mono;
-      font-size: clamp(16px, 3vw, 20px);
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      top: 12px;
-      margin-left: 20px;
-      width: 60%;
-      height: 1px;
-      background-color: $light-slate;
-    }
-  }
-  div {
+  padding-top: 150px;
+  .content {
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 50px;
     margin-bottom: 40px;
-    p {
+    .desc {
       font-family: Calibre;
       color: $slate;
       font-size: 20px;
@@ -295,7 +274,7 @@
     }
     @media screen and (max-width: 450px) {
       & {
-        margin-bottom: 50px;;
+        margin-bottom: 50px;
       }
       .wrapper {
         &:before {
@@ -311,7 +290,7 @@
 }
 @media screen and (max-width: 450px) {
   .about {
-    margin-bottom: 50px;;
+    margin-bottom: 50px;
   }
 }
 
@@ -321,7 +300,7 @@
   .title {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     span {
       color: $green;
       font-family: Mono;
@@ -352,3 +331,78 @@
   }
 }
 
+/* PROJECTS */
+
+.projects {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .container {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      li {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+        position: relative;
+        align-items: center;
+        margin-bottom: 100px;
+        img {
+          width: 100%;
+          border-radius: 10px;
+          z-index: 1;
+          grid-column: 1/8;
+          grid-row: 1/-1;
+        }
+        .description {
+          grid-column: 7 / -1;
+          grid-row: 1 / -1;
+          text-align: right;
+          z-index: 2;
+          .status {
+            color: $green;
+            padding: 10px 0;
+          }
+          h3 {
+            font-family: CalibreSB;
+            font-size: clamp(24px, 5vw, 32px);
+            margin: 0 0 20px;
+            color: $lightest-slate;
+          }
+          .desc-text {
+            font-size: clamp(16px, 3vw, 22px);
+            background-color: $light-navy;
+            position: relative;
+            border-radius: 5px;
+            padding: 25px;
+            color: $lightest-slate;
+            font-family: Calibre, sans-serif;
+
+            background: rgba(17, 32, 64, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+
+            @media (max-width: 768px) {
+              padding: 20px 0;
+            }
+          }
+          .tools {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            color: $light-slate;
+            gap: 20px;
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
