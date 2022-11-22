@@ -27,6 +27,7 @@
 /* HERO SECTION */
 
 .hero {
+
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -49,6 +50,7 @@
     font-family: "Poppins", sans-serif;
     line-height: 1.5rem;
     font-size: 1rem;
+    margin-bottom: 50px;
   }
   h1 {
     font-size: clamp(40px, 8vw, 80px);
@@ -65,7 +67,7 @@
     background: none;
     border: none;
     text-align: center;
-    margin-top: 50px;
+    padding: 1.25rem 0;
     a {
       color: $green;
       padding: 1.25rem 1.75rem;

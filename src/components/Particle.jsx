@@ -419,7 +419,7 @@ function Particle() {
     <Particles
       id="tsparticles"
       init={particlesInit}
-      options={stable_particles}
+      options={moving_particles}
     />
   );
 }

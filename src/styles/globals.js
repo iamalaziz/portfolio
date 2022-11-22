@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 150px;
+    scroll-padding: 150px;
   }
   body {
     font-family: Mono;

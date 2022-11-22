@@ -29,7 +29,7 @@ const socialLinks = [
 const SideLinks = () => {
   return (
     <>
-      <ul className="social">
+      <ul className="social" data-aos="fade-up" data-aos-delay="1000">
         {socialLinks.map((item, index) => {
           return (
             <li key={index}>
@@ -40,7 +40,7 @@ const SideLinks = () => {
           );
         })}
       </ul>
-      <div className="email">
+      <div className="email" data-aos="fade-up" data-aos-delay="1000">
         <a href="mailto:mashrabovabdulaziz2463@gmail.com">
           mashrabovabdulaziz2463@gmail.com
         </a>

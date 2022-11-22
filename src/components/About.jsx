@@ -4,11 +4,11 @@ import AboutSectionPhoto from "../assets/about-img.jpg";
 const About = () => {
   return (
     <section className="about" id="about">
-      <h1>
+      <h1 data-aos="fade-up">
         <span>01. </span>About Me
       </h1>
       <div className="content">
-        <p className="desc">
+        <p className="desc" data-aos="fade-up" data-aos-delay="200">
           I'm a third year student at <span>Dongseo University</span> in Busan,
           South Korea, studying computer engineering <span>since 2020</span>. I
           have experience developing and designing software for the web, from
@@ -34,7 +34,7 @@ const About = () => {
             </blockquote>
           </figure>
         </p>
-        <div className="wrapper">
+        <div className="wrapper" data-aos="flip-right" data-aos-delay="400" data-aos-duration="800">
           <img src={AboutSectionPhoto} alt="me_in_class" />
         </div>
       </div>
