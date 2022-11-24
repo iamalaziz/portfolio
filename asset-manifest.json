@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1cc53bc9.css",
+    "main.js": "/portfolio/static/js/main.9df5a401.js",
+    "static/media/4.png": "/portfolio/static/media/4.e7907aab9fea72554262.png",
+    "static/media/2.png": "/portfolio/static/media/2.9d662b07253a479a24aa.png",
+    "static/media/3.png": "/portfolio/static/media/3.d6295fe10f699638cb6b.png",
+    "static/media/1.png": "/portfolio/static/media/1.41271e397696b3b6a48a.png",
+    "static/media/about-img.jpg": "/portfolio/static/media/about-img.ce4de4ea3286406abe1b.jpg",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.95ec9591073e33ec2f5d.pdf",
+    "static/media/SFMono-Regular.woff2": "/portfolio/static/media/SFMono-Regular.8799e6387338d58f2f13.woff2",
+    "static/media/photo.jpg": "/portfolio/static/media/photo.50416d812649d31aa002.jpg",
+    "static/media/Calibre-Semibold.woff": "/portfolio/static/media/Calibre-Semibold.6972688a249bd53a6c7e.woff",
+    "static/media/Calibre-Regular.woff": "/portfolio/static/media/Calibre-Regular.98526589fa32315c5521.woff",
+    "index.html": "/portfolio/index.html",
+    "main.1cc53bc9.css.map": "/portfolio/static/css/main.1cc53bc9.css.map",
+    "main.9df5a401.js.map": "/portfolio/static/js/main.9df5a401.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cc53bc9.css",
+    "static/js/main.9df5a401.js"
+  ]
+}
