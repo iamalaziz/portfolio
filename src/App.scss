@@ -566,3 +566,16 @@
   }
 }
 
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Poppins", sans-serif;
+
+  padding-bottom: 50px;
+
+}

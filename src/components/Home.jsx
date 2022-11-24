@@ -8,6 +8,7 @@ import Projects from "./Projects";
 import Experience from "./Experience";
 import MobileMenu from "./Navbar/MobileMenu";
 import Navbar from "./Navbar/Navbar";
+import Footer from "./Footer";
 
 const Home = () => {
   const [navbar, setNavbar] = useState(false);
@@ -25,6 +26,7 @@ const Home = () => {
       <Github />
       <Experience />
       <Projects />
+      <Footer />
     </div>
   );
 };
