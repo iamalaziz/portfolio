@@ -1,8 +1,10 @@
-//  data-aos="fade-up" data-aos-delay="200"
 import img1 from "../assets/1.png";
 import img2 from "../assets/2.png";
 import img3 from "../assets/3.png";
 import img4 from "../assets/4.png";
+
+import { MdOutlineVideoSettings } from "react-icons/md";
+import { FiGithub } from "react-icons/fi";
 
 const projects = [
   {
@@ -50,8 +52,8 @@ const projects = [
 const Projects = () => {
   return (
     <section className="projects" id="projects">
-      <h1 className="section-title">
-        <span>02. </span>Projects
+      <h1 className="section-title" data-aos="fade-up">
+        <span>03. </span>Projects
       </h1>
       <div className="container">
         <ul>
@@ -67,15 +69,26 @@ const Projects = () => {
               websiteLink,
             }) => {
               return (
-                <li key={id}>
+                <li
+                  key={id}
+                  data-aos={id % 2 === 0 ? "fade-right" : "fade-left"}
+                >
                   <div className="description">
                     <p className="status">{repStatus}</p>
                     <h3>{title}</h3>
                     <p className="desc-text">{desc}</p>
                     <div className="tools">
-                      {tools.map((i) => {
-                        return <p>{i}</p>;
+                      {tools.map((i, id) => {
+                        return <p key={id}>{i}</p>;
                       })}
+                    </div>
+                    <div className="project-links">
+                      <a href="http://github.com/iamalaziz" target="_blank" rel="noreferrer">
+                        <MdOutlineVideoSettings />
+                      </a>
+                      <a href="http://github.com/iamalaziz" target="_blank" rel="noreferrer">
+                        <FiGithub />
+                      </a>
                     </div>
                   </div>
                   <img src={imgLink} alt="projectImage" />

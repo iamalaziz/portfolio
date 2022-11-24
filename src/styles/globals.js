@@ -8,7 +8,9 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     scroll-behavior: smooth;
-
+  }
+  html::-webkit-scrollbar { 
+    display: none;
   }
   body {
     font-family: Mono;
@@ -40,7 +42,7 @@ const GlobalStyles = createGlobalStyle`
     @media screen and (max-width: 1300px) {
       margin: 0 100px;
     }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 540px) {
       margin: 0 15px;
     }
   }
