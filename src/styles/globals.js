@@ -34,6 +34,7 @@ const GlobalStyles = createGlobalStyle`
   }
   section {
     margin: 0 200px;
+    padding-top: 150px;
 
     display: flex;
     flex-direction: column;
@@ -44,6 +45,7 @@ const GlobalStyles = createGlobalStyle`
     }
     @media screen and (max-width: 540px) {
       margin: 0 15px;
+      padding-top: 100px;
     }
   }
 
@@ -63,7 +65,7 @@ const GlobalStyles = createGlobalStyle`
       position: absolute;
       top: 12px;
       margin-left: 20px;
-      width: 60%;
+      width: 50%;
       height: 1px;
       background-color: #a8b2d1;
     }

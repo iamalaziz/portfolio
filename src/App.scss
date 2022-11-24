@@ -167,10 +167,9 @@
 }
 
 /* ABOUT */
-// there is smth to delete
+
 .about {
   margin-bottom: 100px;
-  padding-top: 150px;
   .content {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -288,6 +287,7 @@
     }
   }
 }
+
 @media screen and (max-width: 450px) {
   .about {
     margin-bottom: 50px;
@@ -335,14 +335,13 @@
 
 .projects {
   margin-bottom: 100px;
-  padding-top: 150px;
   .container {
     ul {
       display: flex;
       flex-direction: column;
       li {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(12, minmax(0, 1fr));
         grid-gap: 10px;
         position: relative;
         align-items: center;
@@ -426,14 +425,21 @@
     .container {
       ul {
         li {
+          display: block;
+          position: relative;
           margin-bottom: 50px;
           .description {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 100%;
-            grid-column: 1 / -1;
-            padding: 40px 40px 30px;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            padding: 20px;
             z-index: 5;
             text-align: left;
             .desc-text {
@@ -442,6 +448,8 @@
               box-shadow: none;
               border: none;
               padding: 0;
+
+              overflow: scroll;
             }
             .tools {
               justify-content: flex-start;
@@ -449,7 +457,7 @@
           }
           img {
             height: 100%;
-            grid-column: 1/-1;
+            position: relative;
             opacity: 0.25;
           }
         }
@@ -460,12 +468,10 @@
 
 /* EXPERIENCE */
 
-#experience {
-  padding-top: 150px;
-  margin-bottom: 100px;
-  max-width: 1000px;
+.experience {
   color: $slate;
   .container {
+    width: 100%;
     display: grid;
     grid-template-columns: 2fr 10fr;
     gap: 10px;
@@ -474,7 +480,9 @@
       flex-direction: column;
       align-items: center;
       button {
-        padding: 15px 25px;
+        width: 100%;
+        text-align: start;
+        padding: 15px 20px 15px;
         background: none;
         border: none;
         border-left: 3px solid $slate;
@@ -486,7 +494,7 @@
           background-color: $green_tint;
         }
         &.active {
-          border-left: 2px solid $green;
+          border-left: 3px solid $green;
         }
       }
     }
@@ -521,10 +529,38 @@
             position: absolute;
             left: 0;
           }
-        }    
+        }
       }
       .active {
         display: block;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      .tabs {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        button {
+          text-align: center;
+          padding: 10px;
+          border-left: none;
+          border-bottom: 3px solid $light-slate;
+          &:focus,
+          &:hover {
+            color: $green;
+            background-color: $green_tint;
+          }
+          &.active {
+            border-bottom: 3px solid $green;
+            border-left: none;
+          }
+        }
       }
     }
   }

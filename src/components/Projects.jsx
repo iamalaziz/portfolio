@@ -69,10 +69,7 @@ const Projects = () => {
               websiteLink,
             }) => {
               return (
-                <li
-                  key={id}
-                  data-aos={id % 2 === 0 ? "fade-right" : "fade-left"}
-                >
+                <li key={id} data-aos="zoom-in">
                   <div className="description">
                     <p className="status">{repStatus}</p>
                     <h3>{title}</h3>
@@ -83,10 +80,18 @@ const Projects = () => {
                       })}
                     </div>
                     <div className="project-links">
-                      <a href="http://github.com/iamalaziz" target="_blank" rel="noreferrer">
+                      <a
+                        href="http://github.com/iamalaziz"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <MdOutlineVideoSettings />
                       </a>
-                      <a href="http://github.com/iamalaziz" target="_blank" rel="noreferrer">
+                      <a
+                        href="http://github.com/iamalaziz"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <FiGithub />
                       </a>
                     </div>

@@ -1,6 +1,5 @@
 @import "../../styles/variables.scss";
 .navbar-container {
-  width: 100%;
   display: flex;
   justify-content: center;
   .navbar {
@@ -98,6 +97,7 @@
   }
   @media screen and (max-width: 670px) {
     .navbar {
+      width: 95%;
       padding: 0.3rem 0.8rem;
       .nav {
         display: none;

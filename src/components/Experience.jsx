@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../App.scss";
+
 const Experience = () => {
   const [activeTab, setActiveTab] = useState(1);
 
@@ -7,7 +8,7 @@ const Experience = () => {
     setActiveTab(index);
   };
   return (
-    <section id="experience">
+    <section id="experience" className="experience">
       <h1 className="section-title" data-aos="fade-up">
         <span>02. </span>Experience
       </h1>
@@ -23,25 +24,25 @@ const Experience = () => {
             className={activeTab === 2 ? "active" : null}
             onClick={() => toggleTab(2)}
           >
-            Web Academy
+            <em>Pending...</em>
           </button>
           <button
             className={activeTab === 3 ? "active" : null}
             onClick={() => toggleTab(3)}
           >
-            Web Academy
+            <em>Pending...</em>
           </button>
         </div>
         <div className="detail">
           <div className={`content ${activeTab === 1 ? "active" : ""}`}>
             <h3>
-              1. Online Mentor at <span>@webacademy</span>
+              Online Mentor at <span>@webacademy</span>
             </h3>
             <h5>March 2021 - December 2021</h5>
             <p>
               Taught students the basics of front-end tools (HTML, CSS,
-              JavaScript, Python). Organized clubs and master classes between
-              middle developers and students.
+              JavaScript, Python) on Zoom Meetings. Organized clubs and master
+              classes between middle developers and students.
             </p>
             <p>
               I was an assistant team leader in internship bootcamps helping
@@ -55,39 +56,13 @@ const Experience = () => {
           </div>
           <div className={`content ${activeTab === 2 ? "active" : ""}`}>
             <h3>
-              2. Online Mentor at <span>@webacademy</span>
+              <em>Pending...</em>
             </h3>
-            <h5>March 2021 - December 2021</h5>
-            <p>
-              Taught students the basics of front-end tools. Organized clubs and
-              master classes between middle developers and students.
-            </p>
-            <p>
-              I was an assistant team leader in internship bootcamps helping
-              members get along with working environment.
-            </p>
-            <p>
-              I taught English and math classes as a foundation for programming
-              environment.
-            </p>
           </div>
           <div className={`content ${activeTab === 3 ? "active" : ""}`}>
             <h3>
-              3. Online Mentor at <span>@webacademy</span>
+              <em>Pending...</em>
             </h3>
-            <h5>March 2021 - December 2021</h5>
-            <p>
-              Taught students the basics of front-end tools. Organized clubs and
-              master classes between middle developers and students.
-            </p>
-            <p>
-              I was an assistant team leader in internship bootcamps helping
-              members get along with working environment.
-            </p>
-            <p>
-              I taught English and math classes as a foundation for programming
-              environment.
-            </p>
           </div>
         </div>
       </div>
