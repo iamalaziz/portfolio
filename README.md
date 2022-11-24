@@ -1,5 +1,6 @@
-## Checkout<a href="http://iamalaziz.github.io/portfolio"
+## Checkout my portfolio <a href="http://iamalaziz.github.io/portfolio">here</a>.
 
+<hr />
 > *Pending...*
 
 ### I should work on 
