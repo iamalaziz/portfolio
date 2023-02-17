@@ -1,51 +1,51 @@
-import img1 from "../assets/1.png";
-import img2 from "../assets/2.png";
-import img3 from "../assets/3.png";
-import img4 from "../assets/4.png";
+import img1 from '../assets/1.png';
+import img2 from '../assets/2.png';
+import img3 from '../assets/3.png';
+import img4 from '../assets/4.png';
 
-import { MdOutlineVideoSettings } from "react-icons/md";
-import { FiGithub } from "react-icons/fi";
+import { MdOutlineVideoSettings } from 'react-icons/md';
+import { FiGithub } from 'react-icons/fi';
 
 const projects = [
   {
     id: 1,
-    repStatus: "Private Respository",
+    repStatus: 'Private Respository',
     imgLink: img1,
-    title: "Glassmorphism Effect Dashboard",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita",
-    tools: ["React JS", "Styled Components", "Firebase", "HTML"],
-    githubLink: "http://github.com/iamalaziz",
-    websiteLink: "",
+    title: 'Glassmorphism Effect Dashboard',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita',
+    tools: ['React JS', 'Styled Components', 'Firebase', 'HTML'],
+    githubLink: 'http://github.com/iamalaziz',
+    websiteLink: '',
   },
   {
     id: 2,
-    repStatus: "Private Respository",
+    repStatus: 'Private Respository',
     imgLink: img2,
-    title: "Nike Clone",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita",
-    tools: ["React JS", "Styled Components", "Firebase", "HTML"],
-    githubLink: "http://github.com/iamalaziz",
-    websiteLink: "",
+    title: 'Nike Clone',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita',
+    tools: ['React JS', 'Styled Components', 'Firebase', 'HTML'],
+    githubLink: 'http://github.com/iamalaziz',
+    websiteLink: '',
   },
   {
     id: 3,
-    repStatus: "Private Respository",
+    repStatus: 'Private Respository',
     imgLink: img3,
-    title: "CryptoBoard",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita",
-    tools: ["React JS", "Styled Components", "Firebase", "HTML"],
-    githubLink: "http://github.com/iamalaziz",
-    websiteLink: "",
+    title: 'CryptoBoard',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita',
+    tools: ['React JS', 'Styled Components', 'Firebase', 'HTML'],
+    githubLink: 'http://github.com/iamalaziz',
+    websiteLink: '',
   },
   {
     id: 4,
-    repStatus: "Private Respository",
+    repStatus: 'Private Respository',
     imgLink: img4,
-    title: "Calculator",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita",
-    tools: ["React JS", "Styled Components", "Firebase", "HTML"],
-    githubLink: "http://github.com/iamalaziz",
-    websiteLink: "",
+    title: 'Calculator',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita',
+    tools: ['React JS', 'Styled Components', 'Firebase', 'HTML'],
+    githubLink: 'http://github.com/iamalaziz',
+    websiteLink: '',
   },
 ];
 

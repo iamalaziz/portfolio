@@ -1,29 +1,29 @@
-import pdf from "../../assets/resume.pdf";
-import Photo from "../../assets/photo.jpg";
-import { GiHamburgerMenu } from "react-icons/gi";
-import "./_Navbar.scss";
-import { Link } from "react-router-dom";
+import pdf from '../../assets/resume.pdf';
+import Photo from '../../assets/photo.jpg';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import './_Navbar.scss';
+import { Link } from 'react-router-dom';
 
 const navLinks = [
   {
-    link: "#about",
-    name: "About",
-    num: "01",
+    link: '#about',
+    name: 'About',
+    num: '01',
   },
   {
-    link: "#experience",
-    name: "Experience",
-    num: "02",
+    link: '#experience',
+    name: 'Experience',
+    num: '02',
   },
   {
-    link: "#projects",
-    name: "Projects",
-    num: "03",
+    link: '#projects',
+    name: 'Projects',
+    num: '03',
   },
   {
-    link: "#contact",
-    name: "Contact",
-    num: "04",
+    link: '#contact',
+    name: 'Contact',
+    num: '04',
   },
 ];
 

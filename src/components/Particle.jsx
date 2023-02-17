@@ -1,5 +1,5 @@
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
 
 // moving particles
 
@@ -39,7 +39,7 @@ const moving_particles = {
         },
       },
       enable: false,
-      mode: "bounce",
+      mode: 'bounce',
       overlap: {
         enable: true,
         retries: 0,
@@ -61,12 +61,12 @@ const moving_particles = {
       center: {
         x: 50,
         y: 50,
-        mode: "percent",
+        mode: 'percent',
         radius: 0,
       },
       decay: 0,
       distance: {},
-      direction: "none",
+      direction: 'none',
       drift: 0,
       enable: false,
       gravity: {
@@ -88,11 +88,11 @@ const moving_particles = {
         options: {},
       },
       outModes: {
-        default: "out",
-        bottom: "out",
-        left: "out",
-        right: "out",
-        top: "out",
+        default: 'out',
+        bottom: 'out',
+        left: 'out',
+        right: 'out',
+        top: 'out',
       },
       random: false,
       size: false,
@@ -106,7 +106,7 @@ const moving_particles = {
         enable: false,
         length: 10,
         fillColor: {
-          value: "#000000",
+          value: '#000000',
         },
       },
       vibrate: false,
@@ -136,14 +136,14 @@ const moving_particles = {
         speed: 0.25,
         decay: 0,
         sync: false,
-        destroy: "none",
-        startValue: "random",
+        destroy: 'none',
+        startValue: 'random',
       },
     },
     shadow: {
       blur: 0,
       color: {
-        value: "#000",
+        value: '#000',
       },
       enable: false,
       offset: {
@@ -153,7 +153,7 @@ const moving_particles = {
     },
     shape: {
       options: {},
-      type: "circle",
+      type: 'circle',
     },
     size: {
       random: {
@@ -167,8 +167,8 @@ const moving_particles = {
         speed: 5,
         decay: 0,
         sync: false,
-        destroy: "none",
-        startValue: "random",
+        destroy: 'none',
+        startValue: 'random',
       },
     },
     stroke: {
@@ -218,12 +218,12 @@ const moving_particles = {
         decay: 0,
         sync: false,
       },
-      direction: "random",
+      direction: 'random',
       path: false,
     },
     destroy: {
       bounds: {},
-      mode: "none",
+      mode: 'none',
       split: {
         count: 1,
         factor: {
@@ -257,7 +257,7 @@ const moving_particles = {
         enable: true,
         value: 30,
       },
-      mode: "vertical",
+      mode: 'vertical',
       speed: {
         min: 15,
         max: 25,
@@ -278,7 +278,7 @@ const moving_particles = {
         decay: 0,
         sync: false,
       },
-      direction: "random",
+      direction: 'random',
       enable: true,
     },
     twinkle: {
@@ -326,7 +326,7 @@ const moving_particles = {
     links: {
       blink: true,
       color: {
-        value: "#fff",
+        value: '#fff',
       },
       consent: false,
       distance: 100,
@@ -336,7 +336,7 @@ const moving_particles = {
       shadow: {
         blur: 5,
         color: {
-          value: "#000",
+          value: '#000',
         },
         enable: false,
       },
@@ -366,7 +366,6 @@ const moving_particles = {
   zLayers: 100,
 };
 
-
 const stable_particles = {
   particles: {
     number: {
@@ -381,7 +380,7 @@ const stable_particles = {
       opacity: 0.03,
     },
     move: {
-      direction: "right",
+      direction: 'right',
       speed: 0.05,
     },
     size: {
@@ -399,7 +398,7 @@ const stable_particles = {
     events: {
       onclick: {
         enable: true,
-        mode: "push",
+        mode: 'push',
       },
     },
     modes: {
@@ -410,7 +409,7 @@ const stable_particles = {
   },
 
   retina_detect: true,
-}
+};
 function Particle() {
   const particlesInit = async (engine) => {
     await loadFull(engine);

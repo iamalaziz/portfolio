@@ -2,9 +2,6 @@ import "./App.scss";
 import Particle from "./components/Particle";
 import Home from "./components/Home";
 
-
-
-
 function App() {
 
   return (

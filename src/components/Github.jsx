@@ -1,6 +1,6 @@
-import React from "react";
-import GitHubCalendar from "react-github-calendar";
-import { FiGithub } from "react-icons/fi";
+import React from 'react';
+import GitHubCalendar from 'react-github-calendar';
+import { FiGithub } from 'react-icons/fi';
 
 const Github = () => {
   return (

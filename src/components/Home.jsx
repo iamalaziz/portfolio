@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import Hero from "./Hero";
-import About from "./About";
-import SideLinks from "./SideLinks";
-import Github from "./Github";
-import Projects from "./Projects";
-import Experience from "./Experience";
-import MobileMenu from "./Navbar/MobileMenu";
-import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer";
+import Hero from './Hero';
+import About from './About';
+import SideLinks from './SideLinks';
+import Github from './Github';
+import Projects from './Projects';
+import Experience from './Experience';
+import MobileMenu from './Navbar/MobileMenu';
+import Navbar from './Navbar/Navbar';
+import Footer from './Footer';
 
 const Home = () => {
   const [navbar, setNavbar] = useState(false);
@@ -18,7 +18,7 @@ const Home = () => {
       {navbar === true ? (
         <MobileMenu navbar={navbar} setNavbar={setNavbar} />
       ) : (
-        ""
+        ''
       )}
       <Hero />
       <SideLinks />

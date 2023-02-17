@@ -1,7 +1,7 @@
-@import "./styles/custom.scss";
-@import "./styles/variables.scss";
+@import './styles/custom.scss';
+@import './styles/variables.scss';
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .App {
   width: 100%;
@@ -47,7 +47,7 @@
     max-width: 540px;
     margin: 20px 0 0;
     color: $slate;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.5rem;
     font-size: 1rem;
     margin-bottom: 50px;
@@ -90,7 +90,7 @@
   flex-direction: column;
   gap: 15px;
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 1px;
     height: 300px;
@@ -141,7 +141,7 @@
   align-items: center;
   justify-content: center;
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 1px;
     height: 200px;
@@ -187,7 +187,7 @@
           font-style: italic;
         }
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           display: block;
           width: 5px;
@@ -210,7 +210,7 @@
         transition: 0.2s all ease-in;
       }
       &:before {
-        content: "";
+        content: '';
         background-color: $green;
         position: absolute;
         display: block;
@@ -222,7 +222,7 @@
         transition: 0.2s all ease-in;
       }
       &:after {
-        content: "";
+        content: '';
         background: transparent;
         position: absolute;
         border: 1px solid $green;
@@ -517,14 +517,14 @@
           margin-bottom: 20px;
         }
         p {
-          font-family: "Poppins", sans-serif;
+          font-family: 'Poppins', sans-serif;
           max-width: 600px;
           margin-bottom: 10px;
           color: $light-slate;
           position: relative;
           padding-left: 30px;
           &:before {
-            content: "▹";
+            content: '▹';
             color: $green;
             position: absolute;
             left: 0;
@@ -574,8 +574,7 @@
   justify-content: center;
   align-items: center;
 
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 
   padding-bottom: 50px;
-
 }

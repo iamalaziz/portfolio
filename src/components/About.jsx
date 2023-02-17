@@ -1,5 +1,5 @@
-import React from "react";
-import AboutSectionPhoto from "../assets/about-img.jpg";
+import React from 'react';
+import AboutSectionPhoto from '../assets/about-img.jpg';
 
 const About = () => {
   return (
@@ -18,15 +18,17 @@ const About = () => {
           consider work an ongoing education, and I'm always looking for
           opportunities to work with those who are willing to share their
           knowledge as much as I want to learn. <br />
-          <br />I regularly solve programming challenges on platforms like{" "}
+          <br />I regularly solve programming challenges on platforms like{' '}
           <a href="http://leetcode.com" target="_blank">
             <span>Leetcode</span>
           </a>
           . Apart from coding, I love solving Cube Puzzles, practising Karate,
-          travelling to new places and having fun with friends. 
-
-          Bonus fact about me is that I speak in four languages, namely <span>English</span>, <span>Russian</span>, <span>Korean</span> and lastly my native <span>Uzbek</span> language.
-          <br /><br />
+          travelling to new places and having fun with friends. Bonus fact about
+          me is that I speak in four languages, namely <span>English</span>,{' '}
+          <span>Russian</span>, <span>Korean</span> and lastly my native{' '}
+          <span>Uzbek</span> language.
+          <br />
+          <br />
           <figure>
             <blockquote>
               Don't write better error messages, write code that doesn't need
@@ -34,7 +36,12 @@ const About = () => {
             </blockquote>
           </figure>
         </div>
-        <div className="wrapper" data-aos="flip-right" data-aos-delay="400" data-aos-duration="800">
+        <div
+          className="wrapper"
+          data-aos="flip-right"
+          data-aos-delay="400"
+          data-aos-duration="800"
+        >
           <img src={AboutSectionPhoto} alt="me_in_class" />
         </div>
       </div>

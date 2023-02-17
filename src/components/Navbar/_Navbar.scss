@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@import '../../styles/variables.scss';
 .navbar-container {
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@
         line-height: 1;
         font-size: 1.2rem;
         font-weight: 600;
-        font-family: "Helvetica", sans-serif;
+        font-family: 'Helvetica', sans-serif;
       }
       img {
         width: 50px;

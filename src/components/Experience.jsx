@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "../App.scss";
+import { useState } from 'react';
+import '../App.scss';
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -15,26 +15,26 @@ const Experience = () => {
       <div className="container" data-aos="zoom-in">
         <div className="tabs">
           <button
-            className={activeTab === 1 ? "active" : null}
+            className={activeTab === 1 ? 'active' : null}
             onClick={() => toggleTab(1)}
           >
             Web Academy
           </button>
           <button
-            className={activeTab === 2 ? "active" : null}
+            className={activeTab === 2 ? 'active' : null}
             onClick={() => toggleTab(2)}
           >
             <em>Pending...</em>
           </button>
           <button
-            className={activeTab === 3 ? "active" : null}
+            className={activeTab === 3 ? 'active' : null}
             onClick={() => toggleTab(3)}
           >
             <em>Pending...</em>
           </button>
         </div>
         <div className="detail">
-          <div className={`content ${activeTab === 1 ? "active" : ""}`}>
+          <div className={`content ${activeTab === 1 ? 'active' : ''}`}>
             <h3>
               Online Mentor at <span>@webacademy</span>
             </h3>
@@ -54,12 +54,12 @@ const Experience = () => {
               programming environment.
             </p>
           </div>
-          <div className={`content ${activeTab === 2 ? "active" : ""}`}>
+          <div className={`content ${activeTab === 2 ? 'active' : ''}`}>
             <h3>
               <em>Pending...</em>
             </h3>
           </div>
-          <div className={`content ${activeTab === 3 ? "active" : ""}`}>
+          <div className={`content ${activeTab === 3 ? 'active' : ''}`}>
             <h3>
               <em>Pending...</em>
             </h3>

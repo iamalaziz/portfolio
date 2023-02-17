@@ -1,28 +1,27 @@
-import React from "react";
-import pdf from "../../assets/resume.pdf";
-// import "./_MobileStyle.scss";
-import { IoCloseSharp } from "react-icons/io5";
+import React from 'react';
+import pdf from '../../assets/resume.pdf';
+import { IoCloseSharp } from 'react-icons/io5';
 
 const navLinks = [
   {
-    link: "#about",
-    name: "About",
-    num: "01",
+    link: '#about',
+    name: 'About',
+    num: '01',
   },
   {
-    link: "#experience",
-    name: "Experience",
-    num: "02",
+    link: '#experience',
+    name: 'Experience',
+    num: '02',
   },
   {
-    link: "#projects",
-    name: "Projects",
-    num: "03",
+    link: '#projects',
+    name: 'Projects',
+    num: '03',
   },
   {
-    link: "#contact",
-    name: "Contact",
-    num: "04",
+    link: '#contact',
+    name: 'Contact',
+    num: '04',
   },
 ];
 
@@ -36,7 +35,7 @@ const MobileMenu = ({ navbar, setNavbar }) => {
         <ul>
           {navLinks.map(({ link, name, num }, i) => {
             return (
-              <li key={num} data-aos="fade-left" data-aos-delay={(i+1)*100}>
+              <li key={num} data-aos="fade-left" data-aos-delay={(i + 1) * 100}>
                 <a href={link} onClick={() => setNavbar(false)}>
                   <span>{num}.</span> {name}
                 </a>
