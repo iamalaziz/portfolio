@@ -366,7 +366,7 @@ const moving_particles = {
   zLayers: 100,
 };
 
-const stable_particles = {
+/* const stable_particles = {
   particles: {
     number: {
       value: 160,
@@ -409,7 +409,8 @@ const stable_particles = {
   },
 
   retina_detect: true,
-};
+}; */
+
 function Particle() {
   const particlesInit = async (engine) => {
     await loadFull(engine);

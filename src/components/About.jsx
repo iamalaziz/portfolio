@@ -19,7 +19,7 @@ const About = () => {
           opportunities to work with those who are willing to share their
           knowledge as much as I want to learn. <br />
           <br />I regularly solve programming challenges on platforms like{' '}
-          <a href="http://leetcode.com" target="_blank">
+          <a href="http://leetcode.com" target="_blank" rel="noreferrer">
             <span>Leetcode</span>
           </a>
           . Apart from coding, I love solving Cube Puzzles, practising Karate,
