@@ -20,11 +20,6 @@ const navLinks = [
     name: 'Projects',
     num: '03',
   },
-  {
-    link: '#contact',
-    name: 'Contact',
-    num: '04',
-  },
 ];
 
 const Navbar = ({ navbar, setNavbar }) => {
@@ -34,8 +29,7 @@ const Navbar = ({ navbar, setNavbar }) => {
         <div className="logo" data-aos="fade-down">
           <img src={Photo} alt="my_image" />
           <p>
-            MASHRABOV <br />
-            ABDULAZIZ
+            ADAM
           </p>
         </div>
         <div className="nav">

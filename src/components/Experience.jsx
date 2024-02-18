@@ -18,51 +18,52 @@ const Experience = () => {
             className={activeTab === 1 ? 'active' : null}
             onClick={() => toggleTab(1)}
           >
-            Web Academy
+            HeadHunter
           </button>
           <button
             className={activeTab === 2 ? 'active' : null}
             onClick={() => toggleTab(2)}
           >
-            <em>Pending...</em>
-          </button>
-          <button
-            className={activeTab === 3 ? 'active' : null}
-            onClick={() => toggleTab(3)}
-          >
-            <em>Pending...</em>
+            FoxMinded
           </button>
         </div>
         <div className="detail">
-          <div className={`content ${activeTab === 1 ? 'active' : ''}`}>
-            <h3>
-              Online Mentor at <span>@webacademy</span>
-            </h3>
-            <h5>March 2021 - December 2021</h5>
-            <p>
-              Taught students the basics of front-end tools (HTML, CSS,
-              JavaScript, Python) on Zoom Meetings. Organized clubs and master
-              classes between middle developers and students.
-            </p>
-            <p>
-              I was an assistant team leader in internship bootcamps helping
-              members get along with working environment in 4 real projects.
-            </p>
-            <p>
-              Since programming needs English language and good level of logic
-              thinking, I taught English and math classes as a foundation for
-              programming environment.
-            </p>
-          </div>
           <div className={`content ${activeTab === 2 ? 'active' : ''}`}>
             <h3>
-              <em>Pending...</em>
+              Online Mentor at <span>@foxminded</span>
             </h3>
+            <h5>Jan 2023 - Aug 2023</h5>
+            <p>
+              Helped students understand best practices in frontend development,
+              including HTML, CSS, and JavaScript standards.
+            </p>
+            <p>
+              Prepared illustrations, materials, tasks and docs for easy
+              learning.
+            </p>
           </div>
-          <div className={`content ${activeTab === 3 ? 'active' : ''}`}>
+          <div className={`content ${activeTab === 1 ? 'active' : ''}`}>
             <h3>
-              <em>Pending...</em>
+              <em>Front-end Developer | Freelancing</em>
             </h3>
+            <h5>Jul 2023 - Nov 2023</h5>
+            <p>
+              Developed reusable components and templates to streamline the
+              development process.
+            </p>
+            <p>
+              Implemented rich user experience by creating 30+ new features
+              using semantic HTML&CSS
+            </p>
+            <p>
+              Integrated third-party services and components like payment
+              gateways, geo-location and social media.{' '}
+            </p>
+            <p>
+              Optimized the performance of the website by implementing best
+              practices such as code splitting and lazy loading.
+            </p>
+            <p>Experienced with building SPA, CRM, E-commerce platforms.</p>
           </div>
         </div>
       </div>

@@ -9,33 +9,33 @@ import { FiGithub } from 'react-icons/fi';
 const projects = [
   {
     id: 1,
-    repStatus: 'Private Respository',
+    repStatus: 'Public Respository',
     imgLink: img1,
-    title: 'Glassmorphism Effect Dashboard',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita',
-    tools: ['React JS', 'Styled Components', 'Firebase', 'HTML'],
+    title: 'WebTech',
+    desc: 'A website to represent Software Development company. I am currently crafting this project.',
+    tools: ['React JS', 'Styled Components', 'sass'],
     githubLink: 'http://github.com/iamalaziz',
-    websiteLink: '',
+    websiteLink: 'http://webtech-v1.vercel.app/',
   },
   {
     id: 2,
-    repStatus: 'Private Respository',
+    repStatus: 'Public Respository',
     imgLink: img2,
-    title: 'Nike Clone',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita',
-    tools: ['React JS', 'Styled Components', 'Firebase', 'HTML'],
-    githubLink: 'http://github.com/iamalaziz',
+    title: 'Math Expert',
+    desc: 'A platform where you can train math skills and compete with other people in leaderboard.',
+    tools: ['React JS', 'scss', 'Express', 'API'],
+    githubLink: 'https://github.com/iamalaziz/math-expert',
     websiteLink: '',
   },
   {
     id: 3,
     repStatus: 'Private Respository',
     imgLink: img3,
-    title: 'CryptoBoard',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita',
-    tools: ['React JS', 'Styled Components', 'Firebase', 'HTML'],
+    title: 'APEXMALL - Ecommerce Website',
+    desc: 'This is an ecommerce website with enough functionalities including orders, products, users and admins.',
+    tools: ['React JS', 'Express', 'Node', 'MongoDB'],
     githubLink: 'http://github.com/iamalaziz',
-    websiteLink: '',
+    websiteLink: 'https://apex-mall.onrender.com/',
   },
   {
     id: 4,
@@ -43,8 +43,8 @@ const projects = [
     imgLink: img4,
     title: 'Calculator',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum delectus, ipsum est tempore debitis eaque consectetur expedita',
-    tools: ['React JS', 'Styled Components', 'Firebase', 'HTML'],
-    githubLink: 'http://github.com/iamalaziz',
+    tools: ['React JS', 'TypeScript', 'Vite'],
+    githubLink: 'https://github.com/iamalaziz/minesweeper-react-ts',
     websiteLink: '',
   },
 ];
@@ -81,14 +81,14 @@ const Projects = () => {
                     </div>
                     <div className="project-links">
                       <a
-                        href="http://github.com/iamalaziz"
+                        href={websiteLink}
                         target="_blank"
                         rel="noreferrer"
                       >
                         <MdOutlineVideoSettings />
                       </a>
                       <a
-                        href="http://github.com/iamalaziz"
+                        href={githubLink}
                         target="_blank"
                         rel="noreferrer"
                       >

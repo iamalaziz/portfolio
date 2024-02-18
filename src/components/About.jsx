@@ -9,31 +9,24 @@ const About = () => {
       </h1>
       <div className="content">
         <div className="desc" data-aos="fade-up" data-aos-delay="200">
-          I'm a third year student at <span>Dongseo University</span> in Busan,
-          South Korea, studying computer engineering <span>since 2020</span>. I
-          have experience developing and designing software for the web, from
-          simple landing pages to progressive web applications. I strive to
-          create software that not only functions efficiently under the hood,
-          but also provides intuitive, pixel-perfect user experiences. I
-          consider work an ongoing education, and I'm always looking for
+          As a passionate full-stack web developer with a Bachelor's degree in{' '}
+          <span>Computer Engineering</span>, I strive to create software that
+          not only functions efficiently under the hood, but also provides
+          intuitive, pixel-perfect user experiences. I have experience
+          developing and designing software for the web, from simple landing
+          pages to progressive web applications. I'm always looking for
           opportunities to work with those who are willing to share their
           knowledge as much as I want to learn. <br />
           <br />I regularly solve programming challenges on platforms like{' '}
           <a href="http://leetcode.com" target="_blank" rel="noreferrer">
             <span>Leetcode</span>
           </a>
-          . Apart from coding, I love solving Cube Puzzles, practising Karate,
-          travelling to new places and having fun with friends. Bonus fact about
-          me is that I speak in four languages, namely <span>English</span>,{' '}
-          <span>Russian</span>, <span>Korean</span> and lastly my native{' '}
-          <span>Uzbek</span> language.
+          . Apart from coding, I love solving Cube Puzzles, going to gym,
+          travelling to new places and having fun with friends.
           <br />
           <br />
           <figure>
-            <blockquote>
-              Don't write better error messages, write code that doesn't need
-              them.
-            </blockquote>
+            <blockquote><span>Whenever in doubt, build something.</span> - Dev Team, The Odin Project</blockquote>
           </figure>
         </div>
         <div
