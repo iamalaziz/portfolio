@@ -1,4 +1,4 @@
-## Checkout my portfolio <a href="http://iamalaziz.github.io/portfolio">here</a>.
+## Checkout my portfolio <a href="https://mashrabov.vercel.app/">here</a>.
 
 <hr />
 
