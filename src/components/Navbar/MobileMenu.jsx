@@ -18,11 +18,6 @@ const navLinks = [
     name: 'Projects',
     num: '03',
   },
-  {
-    link: '#contact',
-    name: 'Contact',
-    num: '04',
-  },
 ];
 
 const MobileMenu = ({ navbar, setNavbar }) => {

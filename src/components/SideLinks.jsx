@@ -1,21 +1,15 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import '../App.scss';
 import {
-  AiOutlineInstagram,
   AiOutlineLinkedin,
   AiOutlineFacebook,
 } from 'react-icons/ai';
 import { FiGithub } from 'react-icons/fi';
-import { FaTelegramPlane } from 'react-icons/fa';
 
 const socialLinks = [
   {
     icon: <FiGithub />,
     link: 'http://github.com/iamalaziz',
-  },
-  {
-    icon: <AiOutlineInstagram />,
-    link: 'http://instagram.com/iamalaziz',
   },
   {
     icon: <AiOutlineLinkedin />,
@@ -25,14 +19,10 @@ const socialLinks = [
     icon: <AiOutlineFacebook />,
     link: 'http://facebook.com/mashrabovabdulaziz',
   },
-  {
-    icon: <FaTelegramPlane />,
-    link: 'http://t.me/iamalaziz',
-  },
 ];
 const SideLinks = () => {
   return (
-    <>
+    <Fragment>
       <ul className="social" data-aos="fade-up" data-aos-delay="1000">
         {socialLinks.map((item, index) => {
           return (
@@ -49,7 +39,7 @@ const SideLinks = () => {
           mashrabovabdulaziz2463@gmail.com
         </a>
       </div>
-    </>
+    </Fragment>
   );
 };
 
